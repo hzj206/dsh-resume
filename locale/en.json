@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Resume Workbench",
+    "description": "Fresh-mint local resume workbench: Markdown DSL editing with live A4 rendering and an agent toolset. No login, fully local.",
+    "detail": "docs/DETAIL.md"
+  }
+}

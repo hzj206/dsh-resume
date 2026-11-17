@@ -1,0 +1,340 @@
+/* dsh-resume · A4 Resume Layout & Typography Styles */
+:root {
+  --A4_width: 794px;
+  --A4_height: 1123px;
+  --icon_height: 1.3rem;
+  --super-link: #4572e3;
+  --markdown-primary-color: #000;
+  --markdown-primary-bg-color: #333;
+}
+
+.markdown-transform-html {
+  background: #fff;
+  color: var(--markdown-primary-color);
+  font-size: 14px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 40px;
+  position: relative;
+  white-space: pre-line;
+  width: var(--A4_width);
+  word-break: break-word;
+  z-index: 2;
+}
+
+.markdown-transform-html svg {
+  height: var(--icon_height);
+  margin-right: 4px;
+  vertical-align: -0.15em;
+  width: auto;
+}
+
+.markdown-transform-html .iconfont {
+  font-size: var(--icon_height);
+  margin-right: 4px;
+}
+
+.markdown-transform-html img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.markdown-transform-html img[alt*="个人头像"] {
+  height: 32mm;
+  object-fit: cover;
+  position: relative;
+  width: 26mm;
+}
+
+.markdown-transform-html a {
+  color: var(--super-link);
+}
+
+.markdown-transform-html :where(li, h3, h4) {
+  margin-top: 5px;
+}
+
+.markdown-transform-html h1 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.markdown-transform-html h2 {
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.markdown-transform-html h3 {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.markdown-transform-html h4 {
+  font-size: 15px;
+}
+
+.markdown-transform-html h5 {
+  font-size: 13px;
+}
+
+.markdown-transform-html h6 {
+  font-size: 12px;
+}
+
+.markdown-transform-html :where(ul, ol) {
+  padding-left: 1.3em;
+}
+
+.markdown-transform-html .flex-layout {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.markdown-transform-html .flex-layout .flex-layout-item {
+  margin-right: 20px;
+}
+
+.markdown-transform-html .flex-layout .flex-layout-item:last-child {
+  margin-right: 0;
+}
+
+.markdown-transform-html table {
+  text-align: center;
+  width: 100%;
+}
+
+.markdown-transform-html table thead {
+  background: transparent;
+  border-radius: 5px;
+  color: var(--markdown-primary-bg-color);
+  line-height: 18px;
+  padding: 2px 8px;
+  position: relative;
+}
+
+.markdown-transform-html table thead th {
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+.markdown-transform-html table thead th:first-child {
+  border-left: 1px solid #eee;
+}
+
+.markdown-transform-html table thead:after {
+  background-color: var(--markdown-primary-bg-color);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.07;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.markdown-transform-html table :where(thead th, tbody td) {
+  font-size: 13px;
+  padding: 6px 8px;
+}
+
+.markdown-transform-html table tbody td:first-child {
+  border-left: 1px solid #eee;
+}
+
+.markdown-transform-html table tbody td {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.markdown-transform-html blockquote {
+  font-size: 14px;
+  margin: 12px 0;
+  padding: 8px 15px;
+  position: relative;
+}
+
+.markdown-transform-html blockquote:after {
+  opacity: 0.1;
+  width: 100%;
+  z-index: 0;
+}
+
+.markdown-transform-html blockquote:after,
+.markdown-transform-html blockquote:before {
+  background: var(--markdown-primary-bg-color);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.markdown-transform-html blockquote:before {
+  display: block;
+  opacity: 0.3;
+  width: 5px;
+}
+
+.markdown-transform-html code.single-code {
+  background: transparent;
+  border-radius: 5px;
+  color: var(--markdown-primary-bg-color);
+  font-size: 13px;
+  line-height: 18px;
+  padding: 2px 8px;
+  position: relative;
+}
+
+.single-code:after {
+  border-radius: 4px;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.07;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.single-code:after,
+hr {
+  background: var(--markdown-primary-bg-color);
+}
+
+.resume-module {
+  cursor: pointer;
+}
+
+.resume-module:hover {
+  background-color: #9ca3af33;
+}
+
+.markdown-transform-html mark {
+  border-radius: 2px;
+  color: inherit;
+  padding: 0 1px;
+}
+
+.markdown-transform-html mark[data-color] :not([data-color]),
+.markdown-transform-html span[data-color] :not([data-color]) {
+  color: inherit !important;
+}
+
+.user-svg-item svg {
+  height: 2.5em !important;
+  vertical-align: -0.15em;
+  width: 2.5em !important;
+}
+
+.jufe-wrapper-page {
+  background: #fff;
+  height: var(--A4_height);
+  margin: 0 auto 10px;
+  position: relative;
+  width: var(--A4_width);
+}
+
+.jufe-wrapper-page-item {
+  overflow: hidden;
+  position: relative;
+  width: var(--A4_width);
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+  padding: 0;
+}
+
+/* Brand & university icon colors */
+.jufe .iconfont { display: inline-block; margin: 0 auto; }
+.jufe .iconfont.icon-yuque { color: #5ecf67; }
+.jufe .iconfont.icon-alibaba { color: #ff5200; }
+.jufe .iconfont.icon-bytedance { background: linear-gradient(90deg, #315ab4, #0dc9d3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-vuejs { color: #42b883; }
+.jufe .iconfont.icon-nuxtjs { color: #06df84; }
+.jufe .iconfont.icon-tencent { color: #0052d9; }
+.jufe .iconfont.icon-gitee { color: #c71d23; }
+.jufe .iconfont.icon-juejin { color: #2582ff; }
+.jufe .iconfont.icon-flutter { background: linear-gradient(180deg, #61c9f8 60%, #045a9d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-leetcode { background: linear-gradient(90deg, #050605, #ffa91e 70%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-taobao { color: #ff5101; }
+.jufe .iconfont.icon-cloud, .jufe .iconfont.icon-twitter { color: #1ea1f1; }
+.jufe .iconfont.icon-bilibili { color: #00a1d6; }
+.jufe .iconfont.icon-typescript { color: #2f74c0; }
+.jufe .iconfont.icon-wangyi { color: #fb1f1e; }
+.jufe .iconfont.icon-android { color: #3bd483; }
+.jufe .iconfont.icon-didichuxing { color: #f38032; }
+.jufe .iconfont.icon-js { color: #efd81b; }
+.jufe .iconfont.icon-jingdong { color: #e51512; }
+.jufe .iconfont.icon-angular { color: #d70230; }
+.jufe .iconfont.icon-tianmao { color: #d92a2c; }
+.jufe .iconfont.icon-nestjs { color: #e0234d; }
+.jufe .iconfont.icon-facebook { color: #1a77f2; }
+.jufe .iconfont.icon-microsoft { background: linear-gradient(90deg, #f65314 0, #f65314 50%, #7cbb00 0, #7cbb00); -webkit-background-clip: text; position: relative; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-microsoft:after { background: linear-gradient(90deg, #01a4ef 0, #01a4ef 45%, #fff, #ffb902 55%, #ffb902); content: ""; height: 50%; left: 0; position: absolute; top: 50%; width: 100%; }
+.jufe .iconfont.icon-kuaishou { color: #ff3d13; }
+.jufe .iconfont.icon-baidu { color: #2932e1; }
+.jufe .iconfont.icon-react { color: #0a7ea4; }
+.jufe .iconfont.icon-tencentcloud { color: #006eff; }
+.jufe .iconfont.icon-xiaochengxu { color: #6567ef; }
+.jufe .iconfont.icon-alipay { color: #1777ff; }
+.jufe .iconfont.icon-wechat { color: #2ec102; }
+.jufe .iconfont.icon-douyin { color: #fff; position: relative; text-shadow: 0 0 5px #fb4d77, 0 0 5px #44e1dd; }
+.jufe .iconfont.icon-douyin:after { background: #1d0b1a; border-radius: 5px; content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
+.jufe .iconfont.icon-logo360 { background: linear-gradient(180deg, #39a046 20%, #e9d224 50%, #39a046); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-maimai { color: #0251f9; }
+.jufe .iconfont.icon-telegram { color: #30ace0; }
+.jufe .iconfont.icon-complete { color: #7bbf05; }
+.jufe .iconfont.icon-error { color: #ca0c16; }
+.jufe .iconfont.icon-man { color: #28a9f5; }
+.jufe .iconfont.icon-woman { color: #f74680; }
+.jufe .iconfont.icon-zhihu { color: #066de8; }
+.jufe .iconfont.icon-antd { background: linear-gradient(90deg, #1389ff 50%, #f63f4e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-kedaxunfei { color: #1c5bac; }
+.jufe .iconfont.icon-huawei { color: #e90116; }
+.jufe .iconfont.icon-xiaomi { color: #e56316; }
+.jufe .iconfont.icon-meituan { color: #fed02f; position: relative; }
+.jufe .iconfont.icon-meituan:after { background: #000; content: ""; height: 70%; left: 10%; position: absolute; top: 15%; width: 80%; z-index: -1; }
+.jufe .iconfont.icon-boss { color: #4fc4be; }
+.jufe .iconfont.icon-dewu { color: #141519; }
+.jufe .iconfont.icon-trip { color: #2377e2; }
+.jufe .iconfont.icon-xiaohongshu { color: #ff2741; }
+.jufe .iconfont.icon-vscode { color: #1f9cf0; }
+.jufe .iconfont.icon-qinghuadaxue { color: purple; }
+.jufe .iconfont.icon-jilindaxue { color: #0281c8; }
+.jufe .iconfont.icon-shu { color: #004279; }
+.jufe .iconfont.icon-pinduoduo { color: #f40008; }
+.jufe .iconfont.icon-nanjingdaxue { color: #6a005f; }
+.jufe .iconfont.icon-zheda { color: #004ea2; }
+.jufe .iconfont.icon-nankai { color: #71175f; }
+.jufe .iconfont.icon-qingdaodaxue { color: #072e7f; }
+.jufe .iconfont.icon-tongjidaxue { color: #1d5aa9; }
+.jufe .iconfont.icon-yunnandaxue { color: #27649b; }
+.jufe .iconfont.icon-taiyuanligong { color: #0e328e; }
+.jufe .iconfont.icon-huadongshifan { color: #ba1238; }
+.jufe .iconfont.icon-ningbodaxue { color: #be302a; }
+.jufe .iconfont.icon-beijingdaxue { color: #980001; }
+.jufe .iconfont.icon-chinaTelecom { color: #2d4c9c; }
+.jufe .iconfont.icon-mayijinfu { color: #047aff; }
+.jufe .iconfont.icon-fox { color: #f95344; position: relative; }
+.jufe .iconfont.icon-chinaMobile { color: #038dd6; }
+.jufe .iconfont.icon-cainiao { color: #006eff; }
+.jufe .iconfont.icon-zhaoshangyinhang { color: #a50031; margin-right: -2px; transform: scale(1.2) translate(-2px); }
+.jufe .iconfont.icon-pingan { color: #ec592d; }
+.jufe .iconfont.icon-byd,
+.jufe .iconfont.icon-jidu,
+.jufe .iconfont.icon-jike,
+.jufe .iconfont.icon-lixiang,
+.jufe .iconfont.icon-shunfeng,
+.jufe .iconfont.icon-weilai { color: #000; }
+.jufe .iconfont.icon-fanqiexiaoshuo { color: #ef5015; }
+.jufe .iconfont.icon-mengniu { background: linear-gradient(90deg, #39a046 20%, #000 50%, #000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.jufe .iconfont.icon-zhongxing { color: #0285d5; }
+.jufe .iconfont.icon-zhongxinjituan { color: #e30302; }
+.jufe .iconfont.icon-yongyou { background: linear-gradient(180deg, #e30302 50%, #333); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }

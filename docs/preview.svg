@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141821"/>
+      <stop offset="1" stop-color="#1d2330"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F54EB"/>
+      <stop offset="1" stop-color="#0E7A5F"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="12" fill="url(#bg)"/>
+  <!-- toolbar -->
+  <rect x="24" y="24" width="592" height="34" rx="8" fill="#232a38"/>
+  <rect x="34" y="32" width="54" height="18" rx="6" fill="#2F54EB" opacity=".85"/>
+  <rect x="96" y="32" width="90" height="18" rx="6" fill="#2a3140"/>
+  <rect x="194" y="32" width="42" height="18" rx="6" fill="#0E7A5F" opacity=".8"/>
+  <rect x="244" y="32" width="46" height="18" rx="6" fill="#2a3140"/>
+  <rect x="540" y="36" width="8" height="8" rx="4" fill="#50c878"/>
+  <rect x="554" y="33" width="52" height="14" rx="5" fill="#2a3140"/>
+  <!-- editor pane -->
+  <rect x="24" y="70" width="330" height="266" rx="8" fill="#232a38"/>
+  <rect x="40" y="88" width="120" height="10" rx="3" fill="#3a4356"/>
+  <rect x="40" y="108" width="240" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="122" width="180" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="146" width="90" height="8" rx="3" fill="#5C7CFA"/>
+  <rect x="40" y="164" width="270" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="178" width="200" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="202" width="110" height="8" rx="3" fill="#3FA88B"/>
+  <rect x="40" y="220" width="260" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="234" width="220" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="258" width="95" height="8" rx="3" fill="#5C7CFA"/>
+  <rect x="40" y="276" width="250" height="7" rx="3" fill="#2e3648"/>
+  <rect x="40" y="290" width="170" height="7" rx="3" fill="#2e3648"/>
+  <!-- A4 preview pane -->
+  <rect x="366" y="70" width="250" height="266" rx="8" fill="#e8eaed"/>
+  <rect x="376" y="80" width="230" height="246" rx="3" fill="#ffffff"/>
+  <rect x="388" y="94" width="130" height="16" rx="3" fill="#0E7A5F"/>
+  <rect x="388" y="118" width="204" height="4" rx="2" fill="#9aa3ad"/>
+  <rect x="388" y="136" width="60" height="9" rx="2" fill="#0E7A5F"/>
+  <rect x="388" y="152" width="204" height="2.5" fill="#0E7A5F"/>
+  <rect x="388" y="162" width="70" height="7" fill="#4a5568"/>
+  <rect x="470" y="162" width="80" height="7" fill="#4a5568"/>
+  <rect x="388" y="176" width="204" height="2.5" fill="#d5d9de"/>
+  <rect x="388" y="186" width="90" height="8" rx="2" fill="#3a9a7c"/>
+  <rect x="388" y="200" width="204" height="4" rx="2" fill="#9aa3ad"/>
+  <rect x="388" y="210" width="180" height="4" rx="2" fill="#9aa3ad"/>
+  <rect x="388" y="228" width="52" height="9" rx="2" fill="#0E7A5F"/>
+  <rect x="388" y="244" width="204" height="2.5" fill="#0E7A5F"/>
+  <rect x="388" y="254" width="70" height="7" fill="#4a5568"/>
+  <rect x="470" y="254" width="90" height="7" fill="#4a5568"/>
+  <!-- badge label -->
+  <rect x="24" y="318" width="592" height="0" fill="none"/>
+  <rect x="196" y="330" width="248" height="2" fill="none"/>
+</svg>

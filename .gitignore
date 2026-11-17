@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.DS_Store
+lib/*.map
+docs/~*
+.tmp*/
+*.tgz
+.env*
