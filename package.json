@@ -18,7 +18,8 @@
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./locale/*.json": "./locale/*.json",
-    "./icon": "./icon.svg"
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
   },
   "files": [
     "lib",
@@ -28,13 +29,19 @@
     "docs",
     "icon.svg",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "keywords": [
     "dsh",
     "dsh-plugin",
     "deepseek-harness",
-    "resume"
+    "resume",
+    "markdown-dsl",
+    "workbench",
+    "pdf-export"
   ],
   "dsh": {
     "bundle": {
@@ -52,5 +59,8 @@
         "@deepseek-ai/dsh-client-ui-tool"
       ]
     }
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

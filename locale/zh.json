@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "简历工作台",
-    "description": "清新薄荷风本地简历工作台：Markdown DSL 编辑 + A4 实时排版渲染 + Agent 工具组。无登录、纯本地存储。",
+    "description": "本地简历工作台：Markdown DSL 与富文本双模式编辑 + A4 实时排版预览 + 27 个 Agent 协作工具（PDF/PNG/HTML/MD 导出、体检、JD 匹配）。无登录、纯本地存储、无水印。",
     "detail": "docs/DETAIL.md"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Resume Workbench",
-    "description": "Fresh-mint local resume workbench: Markdown DSL editing with live A4 rendering and an agent toolset. No login, fully local.",
+    "description": "Local resume workbench for DeepSeek Harness: dual-mode Markdown DSL & WYSIWYG editing, live A4 preview, 27 agent tools, PDF/PNG/HTML/MD export, offline proofread and JD match. Fully local, no watermark.",
     "detail": "docs/DETAIL.md"
   }
 }
