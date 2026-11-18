@@ -23,28 +23,33 @@ description: 用 dsh-resume 插件制作与修改简历（DSL 语法手册 + 工
 
 ## DSL 语法（正文必须严格遵守）
 
-- 主标题（姓名-岗位）：`### !bg[*姓名 - 岗位*](#主色)`
-- 联系行：普通段落，用 ｜ 分隔；带图标用 `icon:github`
-- 模块标题（每个模块开一个新 section，两段字可不同色）：
-  `## !c[教育](#色1)!c[背景](#色2)`
-- 信息四栏行（公司/团队/职位/时间）：
-  ```
-  ::: start
-  **公司名**
-  :::
-  **部门 - 团队**
-  :::
-  **职位**
-  :::
-  **2024.06-2024.09**
-  :::
-  end 之前的行数=栏数
-  ```
-- 技能标签：行内 `` `标签` ``（会渲染成徽章）
-- 要点列表：`- **关键词：**量化描述，指标从 X% 提升至 Y%`
-- 样式补丁：`resume_set_style(id, style)`，字段 primaryColor（正文字色）/ primaryBGColor（模块主色）/ fontFamily / lineHeight
-- 证件照：`resume_set_avatar(id, imageDataUrl)`，位置 `resume_set_avatar_position(id, top, left, shape)`；校徽：`resume_set_school_logo` / `resume_set_school_logo_position`
-- 智能一页：`resume_set_auto_page(id, enabled)`，内容超页自动缩放
+- **主标题（姓名-岗位）**：`### !bg[*姓名 - 岗位*](#主色)`
+  - **正例**：`### !bg[*张明（待替换）- Agent 高级开发工程师*](#e8f2fc)`
+  - **反例（禁止）**：`### !bg[*[姓名待填] - ...*](#e8f2fc)`（`!bg[...]` / `!c[...]` 内**禁止**再写方括号 `[待填]`，请改用圆括号或真实内容）
+  - 浅色背景（如 `#e8f2fc`）自动配深墨色文字，深色背景自动配白色文字。
+- **联系行**：普通段落，用 `｜` 分隔；带图标用 `icon:github`
+- **模块标题（每个模块开一个新 section）**：
+  - 白底/下划线模板可用分色标题：`## !c[教育](#色1)!c[背景](#色2)`
+  - **重要兼容规则**：若当前模板（如在线模板 `28` / `72` / `8general` / `36`）二级标题本身自带实心彩色底块或丝带，请写纯文本 `## 核心优势与技术栈`，**切勿**加深色 `!c[...]`，以免深字与模板底块冲突！
+- **信息四栏行（公司/团队/职位/时间，必须真实换行、各占一行）**：
+  - **正例**：
+    ```markdown
+    ::: start
+    **公司名**
+    :::
+    **部门 - 团队**
+    :::
+    **职位**
+    :::
+    **2024.06 - 2024.09**
+    ::: end
+    ```
+  - **反例（严禁）**：把 `:::` 和下一栏粘在同一行或写成字面量 `:::\\n**智能体平台组**`，或写 `::: start A ::: B ::: end`，或漏写 `::: end`。
+- **技能标签**：行内 `` `标签` ``（渲染成徽章；**禁止**写成空颜色 `!c[标签]()`）
+- **要点列表**：`- **关键词：**量化描述，指标从 X% 提升至 Y%`
+- **样式补丁**：`resume_set_style(id, style)`，字段 primaryColor（正文字色）/ primaryBGColor（模块主色）/ fontFamily / lineHeight
+- **证件照与校徽**：`resume_set_avatar(id, imageDataUrl)`，位置 `resume_set_avatar_position(id, top, left, shape)`；校徽：`resume_set_school_logo` / `resume_set_school_logo_position`
+- **单页/多页控制**：`resume_set_auto_page(id, enabled)`。制作 2 页及以上长简历时应传 `enabled: false` 关闭自动缩成一页，避免字号被整体压缩。
 
 ## 求职情报（写简历前先做功课）
 
